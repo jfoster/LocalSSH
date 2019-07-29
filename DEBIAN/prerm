@@ -1,0 +1,9 @@
+#!/bin/sh
+
+launchctl unload /Library/LaunchDaemons/com.openssh.sshd_local.plist
+
+if [ -s /Library/LaunchDaemons/com.openssh.sshd_local.plist ] ; then
+	rm -f /Library/LaunchDaemons/com.openssh.sshd_local.plist
+fi
+
+sed -i -e '/ssh-local/d' /etc/services

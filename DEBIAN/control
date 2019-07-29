@@ -1,0 +1,9 @@
+Package: com.rave.localssh
+Name: LocalSSH
+Depends: openssh, sed
+Version: 0.1
+Architecture: iphoneos-arm
+Description: Connect to SSH via localhost on port 10022 (127.0.0.1:10022)
+Maintainer: Jacob Foster <jacobfoster@pm.me>
+Author: Jacob Foster <jacobfoster@pm.me>
+Section: Utilities
